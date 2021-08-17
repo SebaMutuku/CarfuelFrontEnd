@@ -18,6 +18,7 @@ export default function Login() {
     const classes = ContainerStyles();
     const [username, setUsername] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const [token, setToken] = React.useState("");
 
     const handleUserChange = (userVal) => {
         setUsername(userVal);
