@@ -27,7 +27,7 @@ export default function Header() {
         <AppBar position="static" style={{
             backgroundColor: "#347899"
         }}>
-            {isLoggedIn ? (<Toolbar>
+            <Toolbar>
                     <IconButton
                         edge="start"
                         className={classes.menuButton}
@@ -84,30 +84,32 @@ export default function Header() {
                         <AccountCircle />
                     </IconButton>
                     <LoginDialog selectedValue={selectedValue} open={open} onClose={handleClose}/>
-                </Toolbar>) :
-                <Toolbar>
-                    <Typography style={{
-                        fontSize: 14,
-                        flexGrow: 1,
-                        fontWeight: "bold",
-                    }}>
-                        Please Login or Register in to proceed
-                    </Typography>
-                    <Typography className={classes.appTitle} style={{
-                        fontWeight: "bold",
-                        fontSize: 14,
-                    }}>
-                        {date}
-                    </Typography>
-                    <Typography className={classes.appTitle} style={{
-                        fontWeight: "bold",
-                        marginLeft: 10,
-                        fontSize: 14,
-                    }}>
-                        {time}
-                    </Typography>
                 </Toolbar>
-            }
+
+            {/*//     :*/}
+            {/*//     <Toolbar>*/}
+            {/*//         <Typography style={{*/}
+            {/*//             fontSize: 14,*/}
+            {/*//             flexGrow: 1,*/}
+            {/*//             fontWeight: "bold",*/}
+            {/*//         }}>*/}
+            {/*//             Please Login or Register in to proceed*/}
+            {/*//         </Typography>*/}
+            {/*//         <Typography className={classes.appTitle} style={{*/}
+            {/*//             fontWeight: "bold",*/}
+            {/*//             fontSize: 14,*/}
+            {/*//         }}>*/}
+            {/*//             {date}*/}
+            {/*//         </Typography>*/}
+            {/*//         <Typography className={classes.appTitle} style={{*/}
+            {/*//             fontWeight: "bold",*/}
+            {/*//             marginLeft: 10,*/}
+            {/*//             fontSize: 14,*/}
+            {/*//         }}>*/}
+            {/*//             {time}*/}
+            {/*//         </Typography>*/}
+            {/*//     </Toolbar>*/}
+            {/*// }*/}
         </AppBar>
     );
 }
