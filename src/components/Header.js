@@ -1,7 +1,7 @@
-import {Button, Toolbar, Typography, AppBar, IconButton, Badge} from "@material-ui/core";
+import {Toolbar, Typography, AppBar, IconButton, Badge} from "@material-ui/core";
 import ContainerStyles from "../css/ContainerStyles";
 import MenuIcon from '@material-ui/icons/Menu';
-import {AccountBox, AccountCircle, Home, Message, Notifications} from "@material-ui/icons";
+import {AccountCircle, Message, Notifications} from "@material-ui/icons";
 import React from "react";
 import LoginDialog from "../dialogs/LoginDialog";
 

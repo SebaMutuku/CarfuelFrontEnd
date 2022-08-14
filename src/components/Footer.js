@@ -1,8 +1,7 @@
 import React from "react";
 import {
     Grid,
-    Paper,
-    AppBar, Toolbar, Typography
+    Typography
 } from "@material-ui/core";
 import ContainerStyles from "../css/ContainerStyles";
 import Divider from '@material-ui/core/Divider';
