@@ -29,7 +29,7 @@ export default function Login() {
 
     function handleLogin() {
 
-        if (username.length < 8 || password.length < 8)
+        if (username.length < 4 || password.length < 4)
             return;
         let loginUrl = url.baseUrl + "/api/users/login/";
         const options = {
@@ -44,16 +44,16 @@ export default function Login() {
             .then((data) => {
               if(data.token===null){
                   toast.showErrorToast(data.message)
+                  history.push("/home");
               }
               else{
                   toast.showSuccessToast(data.message)
-
               }
 
             }).catch((error) => {
             console.log("Error ", error)
         });
-        history.push("/home");
+
 
     }
 
@@ -92,9 +92,7 @@ export default function Login() {
                                        onChange={(val) => handlePassChange(val.target.value)}/>
                         </form>
                         <Button variant="outlined" className={classes.button} fullWidth
-                                disabled={username.length < 8 || password.length < 8} onSubmit={() => {
-
-                        }}>
+                                disabled={username.length < 4 || password.length < 4} >
                             <Typography variant="h6" className={classes.buttonText}
                                         onClick={() => handleLogin()}>Login</Typography>
                         </Button>
