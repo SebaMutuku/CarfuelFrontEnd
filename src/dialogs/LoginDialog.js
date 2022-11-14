@@ -7,7 +7,7 @@ import {AccountBox, ExitToApp, MessageSharp, Settings} from "@material-ui/icons"
 const LoginDialog = (props) => {
     const classes = ContainerStyles();
     const {onClose, selectedValue, open} = props;
-    const [isOpen, setIsOpen] = React.useState(open);
+    // const [isOpen, setIsOpen] = React.useState(open);
 
     const handleClose = () => {
         onClose(selectedValue);

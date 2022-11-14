@@ -84,7 +84,7 @@ const ContainerStyles = makeStyles((theme) => ({
     },
     //Footer
     footer: {
-        marginTop: 20,
+        margin: 0,
         backgroundColor: "#F5F7F9",
         height: "auto"
     }, divider: {

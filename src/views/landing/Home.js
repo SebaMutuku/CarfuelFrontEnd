@@ -1,10 +1,10 @@
 import {Grid, Paper, Typography} from "@material-ui/core";
 import React from "react";
 import ContainerStyles from "../../css/ContainerStyles";
-import {PieChart, Pie} from "recharts"
+import {Pie, PieChart} from "recharts"
 
 
-export default function Home() {
+function Home() {
     const handleChange = (event) => {
         setSpacing(Number(event.target.value));
     };
@@ -97,3 +97,5 @@ export default function Home() {
 
     );
 }
+
+export default Home;

@@ -10,9 +10,7 @@ export default function AppRoutes() {
                     <Route path="/">
                         <Login/>
                     </Route>
-                    <Route path="/dashboard">
-                        <Home/>
-                    </Route>
+                    <Route path="/home" component={Home} exact/>
                 </Switch>
             </Router>
         </Layout>);
