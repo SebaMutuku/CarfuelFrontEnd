@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/CarfuelFrontEnd/static/css/main.1afb9c06.chunk.css",
-    "main.js": "/CarfuelFrontEnd/static/js/main.b8c36c62.chunk.js",
-    "main.js.map": "/CarfuelFrontEnd/static/js/main.b8c36c62.chunk.js.map",
-    "runtime-main.js": "/CarfuelFrontEnd/static/js/runtime-main.83796b69.js",
-    "runtime-main.js.map": "/CarfuelFrontEnd/static/js/runtime-main.83796b69.js.map",
-    "static/css/2.97503911.chunk.css": "/CarfuelFrontEnd/static/css/2.97503911.chunk.css",
-    "static/js/2.d616542e.chunk.js": "/CarfuelFrontEnd/static/js/2.d616542e.chunk.js",
-    "static/js/2.d616542e.chunk.js.map": "/CarfuelFrontEnd/static/js/2.d616542e.chunk.js.map",
-    "static/js/3.387dfd9f.chunk.js": "/CarfuelFrontEnd/static/js/3.387dfd9f.chunk.js",
-    "static/js/3.387dfd9f.chunk.js.map": "/CarfuelFrontEnd/static/js/3.387dfd9f.chunk.js.map",
+    "main.css": "/CarfuelFrontEnd/static/css/main.32f3aea5.chunk.css",
+    "main.js": "/CarfuelFrontEnd/static/js/main.a746c23f.chunk.js",
+    "main.js.map": "/CarfuelFrontEnd/static/js/main.a746c23f.chunk.js.map",
+    "runtime-main.js": "/CarfuelFrontEnd/static/js/runtime-main.6261f34c.js",
+    "runtime-main.js.map": "/CarfuelFrontEnd/static/js/runtime-main.6261f34c.js.map",
+    "static/css/2.68b64559.chunk.css": "/CarfuelFrontEnd/static/css/2.68b64559.chunk.css",
+    "static/js/2.ee3fe670.chunk.js": "/CarfuelFrontEnd/static/js/2.ee3fe670.chunk.js",
+    "static/js/2.ee3fe670.chunk.js.map": "/CarfuelFrontEnd/static/js/2.ee3fe670.chunk.js.map",
+    "static/js/3.f17402b2.chunk.js": "/CarfuelFrontEnd/static/js/3.f17402b2.chunk.js",
+    "static/js/3.f17402b2.chunk.js.map": "/CarfuelFrontEnd/static/js/3.f17402b2.chunk.js.map",
     "index.html": "/CarfuelFrontEnd/index.html",
-    "static/css/2.97503911.chunk.css.map": "/CarfuelFrontEnd/static/css/2.97503911.chunk.css.map",
-    "static/css/main.1afb9c06.chunk.css.map": "/CarfuelFrontEnd/static/css/main.1afb9c06.chunk.css.map",
-    "static/js/2.d616542e.chunk.js.LICENSE.txt": "/CarfuelFrontEnd/static/js/2.d616542e.chunk.js.LICENSE.txt"
+    "static/css/2.68b64559.chunk.css.map": "/CarfuelFrontEnd/static/css/2.68b64559.chunk.css.map",
+    "static/css/main.32f3aea5.chunk.css.map": "/CarfuelFrontEnd/static/css/main.32f3aea5.chunk.css.map",
+    "static/js/2.ee3fe670.chunk.js.LICENSE.txt": "/CarfuelFrontEnd/static/js/2.ee3fe670.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.83796b69.js",
-    "static/css/2.97503911.chunk.css",
-    "static/js/2.d616542e.chunk.js",
-    "static/css/main.1afb9c06.chunk.css",
-    "static/js/main.b8c36c62.chunk.js"
+    "static/js/runtime-main.6261f34c.js",
+    "static/css/2.68b64559.chunk.css",
+    "static/js/2.ee3fe670.chunk.js",
+    "static/css/main.32f3aea5.chunk.css",
+    "static/js/main.a746c23f.chunk.js"
   ]
 }
