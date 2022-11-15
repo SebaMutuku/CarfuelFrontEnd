@@ -1,24 +1,20 @@
 import React from "react";
 import MyCard from "./MyCard";
-import {
-    Button,
-    Grid,
-    TextField,
-    Typography
-} from "@material-ui/core";
+import {Button, Grid, TextField, Typography} from "@material-ui/core";
 import ContainerStyles from "../css/ContainerStyles";
-import {useHistory} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ConfigurableToast from "../utils/ConfigurableToast";
 import url from "../utils/BaseURL";
 
 
+
 export default function Login() {
+    const navigate = useNavigate();
     const toast = new ConfigurableToast();
-    const history = useHistory();
     const classes = ContainerStyles();
     const [username, setUsername] = React.useState("");
     const [password, setPassword] = React.useState("");
-    const [token, setToken] = React.useState("");
+    const [loading, setLoading] = React.useState(false);
 
     const handleUserChange = (userVal) => {
         setUsername(userVal);
@@ -28,7 +24,6 @@ export default function Login() {
     }
 
     function handleLogin() {
-
         if (username.length < 4 || password.length < 4)
             return;
         let loginUrl = url.baseUrl + "/api/users/login/";
@@ -37,23 +32,24 @@ export default function Login() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({username: username, password: password, email: username, RoleId: 1})
+            body: JSON.stringify({username: username, password: password})
         };
+        setLoading(true);
         fetch(loginUrl
             , options).then((response) => response.json())
             .then((data) => {
-              if(data.token===null){
-                  toast.showErrorToast(data.message)
-                  history.push("/home");
-              }
-              else{
-                  toast.showSuccessToast(data.message)
-              }
+                const response = JSON.parse(JSON.stringify(data))
+                localStorage.setItem("userData", JSON.stringify(data));
+                if (response.user.token!=null) {
+                    toast.showSuccessToast(data.message)
+                    navigate("/dashboard");
+                } else {
+                    toast.showErrorToast(data.message)
+                }
 
             }).catch((error) => {
             console.log("Error ", error)
-        });
-
+        }).finally(() => setLoading(false));
 
     }
 
@@ -92,7 +88,7 @@ export default function Login() {
                                        onChange={(val) => handlePassChange(val.target.value)}/>
                         </form>
                         <Button variant="outlined" className={classes.button} fullWidth
-                                disabled={username.length < 4 || password.length < 4} >
+                                disabled={loading}>
                             <Typography variant="h6" className={classes.buttonText}
                                         onClick={() => handleLogin()}>Login</Typography>
                         </Button>
